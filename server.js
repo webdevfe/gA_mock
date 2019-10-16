@@ -4,7 +4,7 @@ var http = require('http');
 var path = require('path');
 var app = express();
 var bodyParser = require('body-parser');
-var port = 3000;
+//var port = 3000;
 
 app.use(express.static(__dirname + '/'));
 app.use(bodyParser.json());
@@ -24,4 +24,4 @@ app.post('/api', function(req, res) {
   res.end();
 });
 
-app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+app.listen(process.env.PORT || 3000, () => console.log(`Example app listening on port ${process.env.PORT}!`))
