@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Pinterest Practice</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.css"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div id="header" class="row"></div>
+
+      <div class="row">
+        <div class="col-md-5 px-1">
+          <div class="card p-2">
+            <h1 class="display-4 display-5">Top 5 Traffic Source By Page Views</h1>
+            <canvas id="pageViews" height="300"></canvas>
+          </div>
+        </div>
+        <div class="col-md-7 px-1">
+          <div class="card p-2">
+            <h1 class="display-4 display-5">Top 10 Traffic Sources</h1>
+            <canvas id="topSources" height="300"></canvas>
+          </div>
+        </div>
+      </div>
+
+      <div id="table" class="row"></div>
+
+      <div class="row">
+        <div class="col-md-12 px-1 mb-3">
+          <div class="card p-2">
+            <h1 class="display-4 display-5">Traffic by Day</h1>
+              <canvas id="trafficDay" height="350"></canvas>
+          </div>
+        </div>
+        <div class="col-md-6 px-1">
+          <div class="card p-2">
+            <h1 class="display-4 display-5">Traffic by Week</h1>
+              <canvas id="trafficWeek" height="350"></canvas>
+          </div>
+        </div>
+        <div class="col-md-6 px-1">
+          <div class="card p-2">
+            <h1 class="display-4 display-5">Traffic by Weekday</h1>
+              <canvas id="trafficWeekday" height="350"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+body {
+  background-color: #eee;
+}
+
+h1 {
+  color: #666;
+}
+h2 {
+  color: #333;
+}
+
+h1.display-4.display-5 {
+  font-size: 16px;
+}
+h1.display-4.display-6 {
+  font-size: 11px;
+}
